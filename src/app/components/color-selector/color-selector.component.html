@@ -2,61 +2,71 @@
     <h3>Couleurs choisies</h3> 
     <table class="selection" align="left">
         <tr>
-            <td style="background-color: {{pcolor[0]}}"><p id="cs1">Couleur 1</p></td>
-            <td style="background-color: {{pcolor[1]}}"><p id="cs2">Couleur 2</p></td>
-            <td style="background-color: {{pcolor[2]}}"><p id="cs3">Couleur 3</p></td>
-            <td style="background-color: {{pcolor[3]}}"><p id="cs4">Couleur 4</p></td>
+            <td align=center><span class="dot" style="background-color: {{pcolor[0]}}"></span></td>
+            <td align=center><span class="dot" style="background-color: {{pcolor[1]}}"></span></td>
+            <td align=center><span class="dot" style="background-color: {{pcolor[2]}}"></span></td>
+            <td align=center><span class="dot" style="background-color: {{pcolor[3]}}"></span></td>
         </tr>
     </table>
-
 </div>
 
-<br>
-
-<div>
-    <table class="" align="left">
-        <tr>
-            <td align=center style="background-color: green; color: white"><p id="b1" (click)="choosecolor(1)">Green</p></td>
-            <td align=center style="background-color: blue; color: white"><p id="b2" (click)="choosecolor(2)">Blue</p></td>
-            <td align=center style="background-color: red" ><p id="b3" (click)="choosecolor(3)">Red</p></td>
-        </tr>
-        <tr>
-            <td align=center style="background-color: purple; color: white"><p id="b4" (click)="choosecolor(4)">Purple</p></td>
-            <td align=center style="background-color: yellow"><p id="b5" (click)="choosecolor(5)">Yellow</p></td>
-            <td align=center style="background-color: brown; color: white"><p id="b6" (click)="choosecolor(6)">Brown</p></td>
-        </tr>
-        <tr>
-            <td align=center style="background-color: rgba(255,0,0,0.1); color:red"><p id="reset" (click)="reset()">Reset</p></td>
-            <td align=center style="background-color: pink"><p id="b0" (click)="choosecolor(0)">Pink</p></td>
-            <td align=center style="background-color: rgba(0,255,0,0.1); color: green" (click)="validate()">Valider</td>
-        </tr>
-    </table>
-
-</div>
+<br><br><br><br><br>
 
 <div>
     <h3>Résultat</h3>
     <table id="tblresultat" class="resultat" align="left">
         <tbody id="tbodyresultat">
             <tr>
-                <td style="background-color: white"><p id="cs1" style="color: {{eColor[0][0]}}; background-color: {{eBGColor[0][0]}}">Couleur 1</p></td>
-                <td style="background-color: white"><p id="cs2" style="color: {{eColor[0][1]}}; background-color: {{eBGColor[0][1]}}">Couleur 2</p></td>
-                <td style="background-color: white"><p id="cs3" style="color: {{eColor[0][2]}}; background-color: {{eBGColor[0][2]}}">Couleur 3</p></td>
-                <td style="background-color: white"><p id="cs4" style="color: {{eColor[0][3]}}; background-color: {{eBGColor[0][3]}}">Couleur 4</p></td>
+                <td align=center style="background-color: {{eBGColor[0][0]}}"><span class="dot" style="background-color:{{eColor[0][0]}}"></span></td>
+                <td align=center style="background-color: {{eBGColor[0][1]}}"><span class="dot" style="background-color:{{eColor[0][1]}}"></span></td>
+                <td align=center style="background-color: {{eBGColor[0][2]}}"><span class="dot" style="background-color:{{eColor[0][2]}}"></span></td>
+                <td align=center style="background-color: {{eBGColor[0][3]}}"><span class="dot" style="background-color:{{eColor[0][3]}}"></span></td>
             </tr>
             <tr>
-                <td style="background-color: white"><p id="cs1" style="color: {{eColor[1][0]}}; background-color: {{eBGColor[1][0]}}">Couleur 1</p></td>
-                <td style="background-color: white"><p id="cs2" style="color: {{eColor[1][1]}}; background-color: {{eBGColor[1][1]}}">Couleur 2</p></td>
-                <td style="background-color: white"><p id="cs3" style="color: {{eColor[1][2]}}; background-color: {{eBGColor[1][2]}}">Couleur 3</p></td>
-                <td style="background-color: white"><p id="cs4" style="color: {{eColor[1][3]}}; background-color: {{eBGColor[1][3]}}">Couleur 4</p></td>
+                <td align=center style="background-color: {{eBGColor[1][0]}}"><span class="dot" style="background-color:{{eColor[1][0]}}"></span></td>
+                <td align=center style="background-color: {{eBGColor[1][1]}}"><span class="dot" style="background-color:{{eColor[1][1]}}"></span></td>
+                <td align=center style="background-color: {{eBGColor[1][2]}}"><span class="dot" style="background-color:{{eColor[1][2]}}"></span></td>
+                <td align=center style="background-color: {{eBGColor[1][3]}}"><span class="dot" style="background-color:{{eColor[1][3]}}"></span></td>
             </tr>
             <tr>
-                <td style="background-color: white"><p id="cs1" style="color: {{eColor[2][0]}}; background-color: {{eBGColor[2][3]}}">Couleur 1</p></td>
-                <td style="background-color: white"><p id="cs2" style="color: {{eColor[2][1]}}; background-color: {{eBGColor[2][3]}}">Couleur 2</p></td>
-                <td style="background-color: white"><p id="cs3" style="color: {{eColor[2][2]}}; background-color: {{eBGColor[2][3]}}">Couleur 3</p></td>
-                <td style="background-color: white"><p id="cs4" style="color: {{eColor[2][3]}}; background-color: {{eBGColor[2][3]}}">Couleur 4</p></td>
+                <td align=center style="background-color: {{eBGColor[2][0]}}"><span class="dot" style="background-color:{{eColor[2][0]}}"></span></td>
+                <td align=center style="background-color: {{eBGColor[2][1]}}"><span class="dot" style="background-color:{{eColor[2][1]}}"></span></td>
+                <td align=center style="background-color: {{eBGColor[2][2]}}"><span class="dot" style="background-color:{{eColor[2][2]}}"></span></td>
+                <td align=center style="background-color: {{eBGColor[2][3]}}"><span class="dot" style="background-color:{{eColor[2][3]}}"></span></td>
             </tr>
         </tbody>
     </table>
 </div>
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div>
+    <h3>Contrôle</h3>
+    <table align="left">
+        <tr>
+            <td align=center><span class="dot" style="background-color: green" (click)="choosecolor(1)"></span></td>
+            <td align=center><span class="dot" style="background-color: blue" (click)="choosecolor(2)"></span></td>
+            <td align=center><span class="dot" style="background-color: red" (click)="choosecolor(3)"></span></td>
+        </tr>
+        <tr>
+            <td align=center><span class="dot" style="background-color: purple" (click)="choosecolor(4)"></span></td>
+            <td align=center><span class="dot" style="background-color: yellow" (click)="choosecolor(5)"></span></td>
+            <td align=center><span class="dot" style="background-color: brown" (click)="choosecolor(6)"></span></td>
+        </tr>
+        <tr>
+            <td align=center style="background-color: rgba(255,0,0,0.1); color:red"><p id="reset" (click)="reset()">Reset</p></td>
+            <td align=center><span class="dot" style="background-color: pink" (click)="choosecolor(0)"></span></td>
+            <td align=center style="background-color: rgba(0,255,0,0.1); color: green" (click)="validate()">Valider</td>
+        </tr>
+    </table>
+</div>

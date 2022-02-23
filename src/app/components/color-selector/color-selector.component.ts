@@ -90,4 +90,7 @@ export class ColorSelectorComponent implements OnInit {
     return (this.nbreCorrect == 4);
   }
 
+  signal(i: number) {
+    console.log(i);
+  }
 }

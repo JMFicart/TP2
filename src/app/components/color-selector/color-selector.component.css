@@ -25,13 +25,6 @@ td {
     border-left-width: 0;
 }
 
-/* th {
-    position: sticky;
-    top: 0;
-    background: #fff;
-    vertical-align: bottom;
-} */
-
 th:last-child,
 td:last-child {
     border-right-width: 0;
@@ -42,9 +35,9 @@ tr:last-child td {
 }
 
 .selection {
-    /* width: 100%; */
-    max-width: 400px;
-    height: 100px;
+    width: 100%;
+    max-width: 275px;
+    height: 65px;
     margin: 0 auto;
     display: block;
     overflow-x: auto;
@@ -60,3 +53,12 @@ tr:last-child td {
     overflow-x: auto;
     border-spacing: 0;
 }
+
+.dot {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border-color: black;
+    border-style: solid;
+    display: inline-block;
+  }
