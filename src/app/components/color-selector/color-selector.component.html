@@ -1,4 +1,19 @@
 <div>
+    <h3>Couleurs choisies</h3> 
+    <table class="selection" align="left">
+        <tr>
+            <td style="background-color: {{pcolor[0]}}"><p id="cs1">Couleur 1</p></td>
+            <td style="background-color: {{pcolor[1]}}"><p id="cs2">Couleur 2</p></td>
+            <td style="background-color: {{pcolor[2]}}"><p id="cs3">Couleur 3</p></td>
+            <td style="background-color: {{pcolor[3]}}"><p id="cs4">Couleur 4</p></td>
+        </tr>
+    </table>
+
+</div>
+
+<br>
+
+<div>
     <table class="" align="left">
         <tr>
             <td align=center style="background-color: green; color: white"><p id="b1" (click)="choosecolor(1)">Green</p></td>
@@ -20,40 +35,26 @@
 </div>
 
 <div>
-    <h3>Couleurs choisies</h3> 
-    <table class="selection" align="left">
-        <tr>
-            <td style="background-color: {{pcolor[0]}}"><p id="cs1">Couleur 1</p></td>
-            <td style="background-color: {{pcolor[1]}}"><p id="cs2">Couleur 2</p></td>
-            <td style="background-color: {{pcolor[2]}}"><p id="cs3">Couleur 3</p></td>
-            <td style="background-color: {{pcolor[3]}}"><p id="cs4">Couleur 4</p></td>
-        </tr>
-    </table>
-
-</div>
-
-
-<div>
     <h3>Résultat</h3>
     <table id="tblresultat" class="resultat" align="left">
         <tbody id="tbodyresultat">
             <tr>
-                <td style="background-color: white"><p id="cs1" style="color: {{eColor[0][0]}}">Couleur 1</p></td>
-                <td style="background-color: white"><p id="cs2" style="color: {{eColor[0][1]}}">Couleur 2</p></td>
-                <td style="background-color: white"><p id="cs3" style="color: {{eColor[0][2]}}">Couleur 3</p></td>
-                <td style="background-color: white"><p id="cs4" style="color: {{eColor[0][3]}}">Couleur 4</p></td>
+                <td style="background-color: white"><p id="cs1" style="color: {{eColor[0][0]}}; background-color: {{eBGColor[0][0]}}">Couleur 1</p></td>
+                <td style="background-color: white"><p id="cs2" style="color: {{eColor[0][1]}}; background-color: {{eBGColor[0][1]}}">Couleur 2</p></td>
+                <td style="background-color: white"><p id="cs3" style="color: {{eColor[0][2]}}; background-color: {{eBGColor[0][2]}}">Couleur 3</p></td>
+                <td style="background-color: white"><p id="cs4" style="color: {{eColor[0][3]}}; background-color: {{eBGColor[0][3]}}">Couleur 4</p></td>
             </tr>
             <tr>
-                <td style="background-color: white"><p id="cs1" style="color: {{eColor[1][0]}}">Couleur 1</p></td>
-                <td style="background-color: white"><p id="cs2" style="color: {{eColor[1][1]}}">Couleur 2</p></td>
-                <td style="background-color: white"><p id="cs3" style="color: {{eColor[1][2]}}">Couleur 3</p></td>
-                <td style="background-color: white"><p id="cs4" style="color: {{eColor[1][3]}}">Couleur 4</p></td>
+                <td style="background-color: white"><p id="cs1" style="color: {{eColor[1][0]}}; background-color: {{eBGColor[1][0]}}">Couleur 1</p></td>
+                <td style="background-color: white"><p id="cs2" style="color: {{eColor[1][1]}}; background-color: {{eBGColor[1][1]}}">Couleur 2</p></td>
+                <td style="background-color: white"><p id="cs3" style="color: {{eColor[1][2]}}; background-color: {{eBGColor[1][2]}}">Couleur 3</p></td>
+                <td style="background-color: white"><p id="cs4" style="color: {{eColor[1][3]}}; background-color: {{eBGColor[1][3]}}">Couleur 4</p></td>
             </tr>
             <tr>
-                <td style="background-color: white"><p id="cs1" style="color: {{eColor[2][0]}}">Couleur 1</p></td>
-                <td style="background-color: white"><p id="cs2" style="color: {{eColor[2][1]}}">Couleur 2</p></td>
-                <td style="background-color: white"><p id="cs3" style="color: {{eColor[2][2]}}">Couleur 3</p></td>
-                <td style="background-color: white"><p id="cs4" style="color: {{eColor[2][3]}}">Couleur 4</p></td>
+                <td style="background-color: white"><p id="cs1" style="color: {{eColor[2][0]}}; background-color: {{eBGColor[2][3]}}">Couleur 1</p></td>
+                <td style="background-color: white"><p id="cs2" style="color: {{eColor[2][1]}}; background-color: {{eBGColor[2][3]}}">Couleur 2</p></td>
+                <td style="background-color: white"><p id="cs3" style="color: {{eColor[2][2]}}; background-color: {{eBGColor[2][3]}}">Couleur 3</p></td>
+                <td style="background-color: white"><p id="cs4" style="color: {{eColor[2][3]}}; background-color: {{eBGColor[2][3]}}">Couleur 4</p></td>
             </tr>
         </tbody>
     </table>

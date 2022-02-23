@@ -14,6 +14,8 @@ export class ColorSelectorComponent implements OnInit {
   nbreEssaisPossibles: number = 3; //10;
   cptCouleur: number = 0;
   cptEssai:number = 0;
+  nbreCorrect:number = 0;
+  trouve:boolean = false;
   
   constructor() {
     for(var i=0;i<3;i++){
@@ -58,7 +60,34 @@ export class ColorSelectorComponent implements OnInit {
   }
 
   checkResult():boolean {
-    return false;
+    this.nbreCorrect = 0;
+    for(var i = 0; i < 4; i++){
+      if(this.eColor[this.cptEssai][i]==this.combinaison[i]){
+        // bg green
+        this.eBGColor[this.cptEssai][i] = "green";
+        this.nbreCorrect++;
+      }
+      else {
+        this.trouve = false;
+        for(var j = 0; j < 4; j++){
+          if(this.eColor[this.cptEssai][i]==this.combinaison[j]){
+            if(this.eColor[this.cptEssai][i]!=this.eColor[this.cptEssai][j]){
+              this.trouve = true;
+            }
+            j = 4;
+          }
+        }
+        if(this.trouve==true){
+          // bg yellow
+          this.eBGColor[this.cptEssai][i] = "yellow";
+        }else{
+          // bg red
+          this.eBGColor[this.cptEssai][i] = "red";
+        }
+      }
+    }
+
+    return (this.nbreCorrect == 4);
   }
 
 }
