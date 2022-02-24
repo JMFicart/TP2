@@ -1,0 +1,17 @@
+.game-container{
+    display: flex;
+    background-color: blanchedalmond;
+    border-color: gray;
+    border-style: solid;
+    margin-bottom: 10px;
+}
+
+.game-container > div{
+    padding: 20px;
+    margin: 20px;
+    background-color: blanchedalmond;
+    border: 2px;
+    border-color: grey;
+    border-style: solid;
+
+}
